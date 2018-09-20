@@ -8,13 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		0756B376215349B700B99C98 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0756B375215349B700B99C98 /* AppDelegate.m */; };
-		0756B379215349B700B99C98 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0756B378215349B700B99C98 /* ViewController.m */; };
-		0756B37C215349B700B99C98 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0756B37A215349B700B99C98 /* Main.storyboard */; };
 		0756B37E215349B800B99C98 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0756B37D215349B800B99C98 /* Assets.xcassets */; };
-		0756B381215349B800B99C98 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0756B37F215349B800B99C98 /* LaunchScreen.storyboard */; };
 		0756B384215349B800B99C98 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0756B383215349B800B99C98 /* main.m */; };
 		0756B38E215349B900B99C98 /* JXWelcomeViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0756B38D215349B900B99C98 /* JXWelcomeViewTests.m */; };
 		0756B399215349B900B99C98 /* JXWelcomeViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0756B398215349B900B99C98 /* JXWelcomeViewUITests.m */; };
+		0756B3AB2153828A00B99C98 /* JXWelcomeVideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0756B3AA2153828A00B99C98 /* JXWelcomeVideoView.m */; };
+		0756B3AF2153831200B99C98 /* JXWelcomeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0756B3AE2153831200B99C98 /* JXWelcomeModel.m */; };
+		0756B3B32153834700B99C98 /* WelcomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0756B3B22153834700B99C98 /* WelcomeVC.m */; };
+		167B4257417B3E0272007762 /* libPods-JXWelcomeViewTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D60282E5E0D70C2FC4C18D3 /* libPods-JXWelcomeViewTests.a */; };
+		E110ACB1A06137754181640A /* libPods-JXWelcomeView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CDAD59597879CC93B046568 /* libPods-JXWelcomeView.a */; };
+		FE3E8F9F3F8BD12C1CECB5DA /* libPods-JXWelcomeViewUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CB1D7008F70A16874A306A5B /* libPods-JXWelcomeViewUITests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,14 +38,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		04D2AB0A11789A20F5C770E3 /* Pods-JXWelcomeViewUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JXWelcomeViewUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-JXWelcomeViewUITests/Pods-JXWelcomeViewUITests.release.xcconfig"; sourceTree = "<group>"; };
 		0756B371215349B700B99C98 /* JXWelcomeView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JXWelcomeView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0756B374215349B700B99C98 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0756B375215349B700B99C98 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		0756B377215349B700B99C98 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		0756B378215349B700B99C98 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		0756B37B215349B700B99C98 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0756B37D215349B800B99C98 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		0756B380215349B800B99C98 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0756B382215349B800B99C98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0756B383215349B800B99C98 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0756B389215349B900B99C98 /* JXWelcomeViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JXWelcomeViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -51,6 +51,20 @@
 		0756B394215349B900B99C98 /* JXWelcomeViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JXWelcomeViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0756B398215349B900B99C98 /* JXWelcomeViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JXWelcomeViewUITests.m; sourceTree = "<group>"; };
 		0756B39A215349B900B99C98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0756B3A92153828A00B99C98 /* JXWelcomeVideoView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JXWelcomeVideoView.h; sourceTree = "<group>"; };
+		0756B3AA2153828A00B99C98 /* JXWelcomeVideoView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JXWelcomeVideoView.m; sourceTree = "<group>"; };
+		0756B3AD2153831200B99C98 /* JXWelcomeModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JXWelcomeModel.h; sourceTree = "<group>"; };
+		0756B3AE2153831200B99C98 /* JXWelcomeModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JXWelcomeModel.m; sourceTree = "<group>"; };
+		0756B3B12153834700B99C98 /* WelcomeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WelcomeVC.h; sourceTree = "<group>"; };
+		0756B3B22153834700B99C98 /* WelcomeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WelcomeVC.m; sourceTree = "<group>"; };
+		261E048F6AC1AB6381F1B285 /* Pods-JXWelcomeViewUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JXWelcomeViewUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JXWelcomeViewUITests/Pods-JXWelcomeViewUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		3CDAD59597879CC93B046568 /* libPods-JXWelcomeView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JXWelcomeView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D60282E5E0D70C2FC4C18D3 /* libPods-JXWelcomeViewTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JXWelcomeViewTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		401C9AD97A9A4FFD9684706C /* Pods-JXWelcomeView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JXWelcomeView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JXWelcomeView/Pods-JXWelcomeView.debug.xcconfig"; sourceTree = "<group>"; };
+		49AAA760A5F94B7447FE7EA6 /* Pods-JXWelcomeViewTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JXWelcomeViewTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-JXWelcomeViewTests/Pods-JXWelcomeViewTests.release.xcconfig"; sourceTree = "<group>"; };
+		AD60EEF31DB390257E1203E0 /* Pods-JXWelcomeView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JXWelcomeView.release.xcconfig"; path = "Pods/Target Support Files/Pods-JXWelcomeView/Pods-JXWelcomeView.release.xcconfig"; sourceTree = "<group>"; };
+		CB1D7008F70A16874A306A5B /* libPods-JXWelcomeViewUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JXWelcomeViewUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E76251B064602EEC4F2CF03E /* Pods-JXWelcomeViewTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JXWelcomeViewTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JXWelcomeViewTests/Pods-JXWelcomeViewTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E110ACB1A06137754181640A /* libPods-JXWelcomeView.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				167B4257417B3E0272007762 /* libPods-JXWelcomeViewTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE3E8F9F3F8BD12C1CECB5DA /* libPods-JXWelcomeViewUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +102,8 @@
 				0756B38C215349B900B99C98 /* JXWelcomeViewTests */,
 				0756B397215349B900B99C98 /* JXWelcomeViewUITests */,
 				0756B372215349B700B99C98 /* Products */,
+				281F8F3D191F00496E1BE4A5 /* Pods */,
+				B4A777B2B21B59DC68AA4762 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,13 +120,11 @@
 		0756B373215349B700B99C98 /* JXWelcomeView */ = {
 			isa = PBXGroup;
 			children = (
+				0756B3AC215382C900B99C98 /* JXWelcomeView */,
+				0756B3B02153832300B99C98 /* Example */,
 				0756B374215349B700B99C98 /* AppDelegate.h */,
 				0756B375215349B700B99C98 /* AppDelegate.m */,
-				0756B377215349B700B99C98 /* ViewController.h */,
-				0756B378215349B700B99C98 /* ViewController.m */,
-				0756B37A215349B700B99C98 /* Main.storyboard */,
 				0756B37D215349B800B99C98 /* Assets.xcassets */,
-				0756B37F215349B800B99C98 /* LaunchScreen.storyboard */,
 				0756B382215349B800B99C98 /* Info.plist */,
 				0756B383215349B800B99C98 /* main.m */,
 			);
@@ -132,6 +149,57 @@
 			path = JXWelcomeViewUITests;
 			sourceTree = "<group>";
 		};
+		0756B3A82153825A00B99C98 /* JXWelcomeVideoView */ = {
+			isa = PBXGroup;
+			children = (
+				0756B3A92153828A00B99C98 /* JXWelcomeVideoView.h */,
+				0756B3AA2153828A00B99C98 /* JXWelcomeVideoView.m */,
+			);
+			path = JXWelcomeVideoView;
+			sourceTree = "<group>";
+		};
+		0756B3AC215382C900B99C98 /* JXWelcomeView */ = {
+			isa = PBXGroup;
+			children = (
+				0756B3AD2153831200B99C98 /* JXWelcomeModel.h */,
+				0756B3AE2153831200B99C98 /* JXWelcomeModel.m */,
+				0756B3A82153825A00B99C98 /* JXWelcomeVideoView */,
+			);
+			path = JXWelcomeView;
+			sourceTree = "<group>";
+		};
+		0756B3B02153832300B99C98 /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				0756B3B12153834700B99C98 /* WelcomeVC.h */,
+				0756B3B22153834700B99C98 /* WelcomeVC.m */,
+			);
+			path = Example;
+			sourceTree = "<group>";
+		};
+		281F8F3D191F00496E1BE4A5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				401C9AD97A9A4FFD9684706C /* Pods-JXWelcomeView.debug.xcconfig */,
+				AD60EEF31DB390257E1203E0 /* Pods-JXWelcomeView.release.xcconfig */,
+				E76251B064602EEC4F2CF03E /* Pods-JXWelcomeViewTests.debug.xcconfig */,
+				49AAA760A5F94B7447FE7EA6 /* Pods-JXWelcomeViewTests.release.xcconfig */,
+				261E048F6AC1AB6381F1B285 /* Pods-JXWelcomeViewUITests.debug.xcconfig */,
+				04D2AB0A11789A20F5C770E3 /* Pods-JXWelcomeViewUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B4A777B2B21B59DC68AA4762 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3CDAD59597879CC93B046568 /* libPods-JXWelcomeView.a */,
+				3D60282E5E0D70C2FC4C18D3 /* libPods-JXWelcomeViewTests.a */,
+				CB1D7008F70A16874A306A5B /* libPods-JXWelcomeViewUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,6 +207,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0756B39D215349B900B99C98 /* Build configuration list for PBXNativeTarget "JXWelcomeView" */;
 			buildPhases = (
+				4D4A848B608B0E80B69C3EF5 /* [CP] Check Pods Manifest.lock */,
 				0756B36D215349B700B99C98 /* Sources */,
 				0756B36E215349B700B99C98 /* Frameworks */,
 				0756B36F215349B700B99C98 /* Resources */,
@@ -156,6 +225,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0756B3A0215349B900B99C98 /* Build configuration list for PBXNativeTarget "JXWelcomeViewTests" */;
 			buildPhases = (
+				DD51F7A9C27101170A75B62E /* [CP] Check Pods Manifest.lock */,
 				0756B385215349B900B99C98 /* Sources */,
 				0756B386215349B900B99C98 /* Frameworks */,
 				0756B387215349B900B99C98 /* Resources */,
@@ -174,6 +244,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0756B3A3215349B900B99C98 /* Build configuration list for PBXNativeTarget "JXWelcomeViewUITests" */;
 			buildPhases = (
+				4D228ACA19F645CFE1658DED /* [CP] Check Pods Manifest.lock */,
 				0756B390215349B900B99C98 /* Sources */,
 				0756B391215349B900B99C98 /* Frameworks */,
 				0756B392215349B900B99C98 /* Resources */,
@@ -235,9 +306,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0756B381215349B800B99C98 /* LaunchScreen.storyboard in Resources */,
 				0756B37E215349B800B99C98 /* Assets.xcassets in Resources */,
-				0756B37C215349B700B99C98 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,14 +326,73 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4D228ACA19F645CFE1658DED /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JXWelcomeViewUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4D4A848B608B0E80B69C3EF5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JXWelcomeView-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DD51F7A9C27101170A75B62E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JXWelcomeViewTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0756B36D215349B700B99C98 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0756B379215349B700B99C98 /* ViewController.m in Sources */,
 				0756B384215349B800B99C98 /* main.m in Sources */,
 				0756B376215349B700B99C98 /* AppDelegate.m in Sources */,
+				0756B3AF2153831200B99C98 /* JXWelcomeModel.m in Sources */,
+				0756B3AB2153828A00B99C98 /* JXWelcomeVideoView.m in Sources */,
+				0756B3B32153834700B99C98 /* WelcomeVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,25 +426,6 @@
 			targetProxy = 0756B395215349B900B99C98 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		0756B37A215349B700B99C98 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0756B37B215349B700B99C98 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		0756B37F215349B800B99C98 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0756B380215349B800B99C98 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		0756B39B215349B900B99C98 /* Debug */ = {
@@ -431,6 +540,7 @@
 		};
 		0756B39E215349B900B99C98 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 401C9AD97A9A4FFD9684706C /* Pods-JXWelcomeView.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -447,6 +557,7 @@
 		};
 		0756B39F215349B900B99C98 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD60EEF31DB390257E1203E0 /* Pods-JXWelcomeView.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -463,6 +574,7 @@
 		};
 		0756B3A1215349B900B99C98 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E76251B064602EEC4F2CF03E /* Pods-JXWelcomeViewTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -481,6 +593,7 @@
 		};
 		0756B3A2215349B900B99C98 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 49AAA760A5F94B7447FE7EA6 /* Pods-JXWelcomeViewTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -499,6 +612,7 @@
 		};
 		0756B3A4215349B900B99C98 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 261E048F6AC1AB6381F1B285 /* Pods-JXWelcomeViewUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = JXWelcomeViewUITests/Info.plist;
@@ -516,6 +630,7 @@
 		};
 		0756B3A5215349B900B99C98 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 04D2AB0A11789A20F5C770E3 /* Pods-JXWelcomeViewUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = JXWelcomeViewUITests/Info.plist;

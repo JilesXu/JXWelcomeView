@@ -16,7 +16,11 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    application.delegate.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    application.delegate.window.backgroundColor = [UIColor whiteColor];
+    [application.delegate.window makeKeyAndVisible];
+    
     return YES;
 }
 
