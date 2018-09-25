@@ -47,6 +47,8 @@ static int adsSkimpTime = 5;
     if (self.counterTimer && self.counterTimer.isValid) {
         [self.counterTimer invalidate];
     }
+    
+    [self.player pause];
 }
 
 #pragma mark - Method
@@ -69,8 +71,7 @@ static int adsSkimpTime = 5;
     NSInteger count = [countString integerValue];
     count--;
     
-    if (count <= 0) {
-        self.counterLabel.text = [NSString stringWithFormat:@"跳过\n%1ldS", (long)count];
+    if (count < 0) {
         [self.counterTimer setFireDate:[NSDate distantFuture]];//关闭计时器
         if (count == -1) {
             [self skip:nil];
