@@ -33,9 +33,7 @@ static int adsSkimpTime = 5;
     if (self) {
         self.backgroundColor = [UIColor redColor];
         if ([JXUtilities isValidString:url]) {
-            
-            
-            self.videoUrl = [NSURL URLWithString:url];
+            self.videoUrl = [NSURL fileURLWithPath:url];
             [self addAVPlayerLayerAndSubviews];
         }
     }
@@ -91,8 +89,8 @@ static int adsSkimpTime = 5;
 - (UIButton *)skipButton {
     if (!_skipButton) {
         _skipButton = [[UIButton alloc] initWithFrame:CGRectMake(CGRectGetWidth(self.bounds)-75, CGRectGetHeight([UIApplication sharedApplication].statusBarFrame), 80, 80)];
-//        [_skipButton setImage:[UIImage imageNamed:@"welcome_skip_normal"] forState:UIControlStateNormal];
-//        [_skipButton setImage:[UIImage imageNamed:@"welcome_skip_highlight"] forState:UIControlStateHighlighted];
+        [_skipButton setImage:[UIImage imageNamed:@"welcome_skip_normal"] forState:UIControlStateNormal];
+        [_skipButton setImage:[UIImage imageNamed:@"welcome_skip_highlight"] forState:UIControlStateHighlighted];
         [_skipButton addTarget:self action:@selector(skip:) forControlEvents:UIControlEventTouchUpInside];
     }
     
