@@ -21,6 +21,7 @@ static int adsSkimpTime = 5;
 @property (nonatomic, strong) AVPlayerLayer *playerLayer;
 @property (nonatomic, strong) UIButton *skipButton;
 @property (nonatomic, strong) UILabel *counterLabel;
+@property (nonatomic, strong) NSTimer *counterTimer;
 
 @end
 
@@ -43,7 +44,9 @@ static int adsSkimpTime = 5;
 
 #pragma mark - Event Response
 - (void)skip:(UIButton *)sender {
-    
+    if (self.counterTimer && self.counterTimer.isValid) {
+        [self.counterTimer invalidate];
+    }
 }
 
 #pragma mark - Method
@@ -51,9 +54,32 @@ static int adsSkimpTime = 5;
     [self.layer addSublayer:self.playerLayer];
     [self addSubview:self.skipButton];
     [self.skipButton addSubview:self.counterLabel];
-//    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(playbackFinished:) name:AVPlayerItemDidPlayToEndTimeNotification object:nil];
     [self.player play];
+    self.counterTimer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(count:) userInfo:nil repeats:YES];
 }
+
+
+- (void)count:(NSTimer *)sender {
+    NSString *title = self.counterLabel.text;
+    if (title.length < 4) {
+        return;
+    }
+    
+    NSString *countString = [title substringFromIndex:3];
+    NSInteger count = [countString integerValue];
+    count--;
+    
+    if (count <= 0) {
+        self.counterLabel.text = [NSString stringWithFormat:@"跳过\n%1ldS", (long)count];
+        [self.counterTimer setFireDate:[NSDate distantFuture]];//关闭计时器
+        if (count == -1) {
+            [self skip:nil];
+        }
+    } else {
+        self.counterLabel.text = [NSString stringWithFormat:@"跳过\n%1ldS", (long)count];
+    }
+}
+
 
 #pragma mark - Setting And Getting
 - (AVPlayer *)player {
