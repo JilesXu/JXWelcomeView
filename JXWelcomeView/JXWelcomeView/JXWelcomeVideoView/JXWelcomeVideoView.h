@@ -10,4 +10,6 @@
 
 @interface JXWelcomeVideoView : UIView
 
+- (instancetype)initWithFrame:(CGRect)frame andUrl:(NSString *)url;
+
 @end

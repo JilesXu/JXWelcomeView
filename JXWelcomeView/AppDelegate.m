@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "JXWelcomeVideoView.h"
+#import "WelcomeVC.h"
 
 @interface AppDelegate ()
 
@@ -17,9 +19,16 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    application.delegate.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    application.delegate.window.backgroundColor = [UIColor whiteColor];
-    [application.delegate.window makeKeyAndVisible];
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.backgroundColor = [UIColor whiteColor];
+    
+    
+    WelcomeVC *rootVC = [[WelcomeVC alloc] init];
+    self.window.rootViewController = rootVC;
+    [self.window makeKeyAndVisible];
+    
+    JXWelcomeVideoView *welcomeView = [[JXWelcomeVideoView alloc] initWithFrame:[UIScreen mainScreen].bounds andUrl:[[NSBundle mainBundle] pathForResource:@"demo" ofType:@"mp4"]];
+    [self.window addSubview:welcomeView];
     
     return YES;
 }

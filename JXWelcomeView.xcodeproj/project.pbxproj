@@ -15,6 +15,11 @@
 		0756B3AB2153828A00B99C98 /* JXWelcomeVideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0756B3AA2153828A00B99C98 /* JXWelcomeVideoView.m */; };
 		0756B3AF2153831200B99C98 /* JXWelcomeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0756B3AE2153831200B99C98 /* JXWelcomeModel.m */; };
 		0756B3B32153834700B99C98 /* WelcomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0756B3B22153834700B99C98 /* WelcomeVC.m */; };
+		079F922D215A045100FAEE72 /* UIColor+JXExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = 079F9229215A045100FAEE72 /* UIColor+JXExtend.m */; };
+		079F922E215A045100FAEE72 /* JXUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 079F922A215A045100FAEE72 /* JXUtilities.m */; };
+		079F9234215A184800FAEE72 /* demo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 079F9233215A184800FAEE72 /* demo.mp4 */; };
+		079F9237215A1C0D00FAEE72 /* welcome_skip_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 079F9235215A1C0D00FAEE72 /* welcome_skip_normal@2x.png */; };
+		079F9238215A1C0D00FAEE72 /* welcome_skip_highlight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 079F9236215A1C0D00FAEE72 /* welcome_skip_highlight@2x.png */; };
 		167B4257417B3E0272007762 /* libPods-JXWelcomeViewTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D60282E5E0D70C2FC4C18D3 /* libPods-JXWelcomeViewTests.a */; };
 		E110ACB1A06137754181640A /* libPods-JXWelcomeView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CDAD59597879CC93B046568 /* libPods-JXWelcomeView.a */; };
 		FE3E8F9F3F8BD12C1CECB5DA /* libPods-JXWelcomeViewUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CB1D7008F70A16874A306A5B /* libPods-JXWelcomeViewUITests.a */; };
@@ -57,6 +62,13 @@
 		0756B3AE2153831200B99C98 /* JXWelcomeModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JXWelcomeModel.m; sourceTree = "<group>"; };
 		0756B3B12153834700B99C98 /* WelcomeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WelcomeVC.h; sourceTree = "<group>"; };
 		0756B3B22153834700B99C98 /* WelcomeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WelcomeVC.m; sourceTree = "<group>"; };
+		079F9229215A045100FAEE72 /* UIColor+JXExtend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+JXExtend.m"; sourceTree = "<group>"; };
+		079F922A215A045100FAEE72 /* JXUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXUtilities.m; sourceTree = "<group>"; };
+		079F922B215A045100FAEE72 /* UIColor+JXExtend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+JXExtend.h"; sourceTree = "<group>"; };
+		079F922C215A045100FAEE72 /* JXUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXUtilities.h; sourceTree = "<group>"; };
+		079F9233215A184800FAEE72 /* demo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = demo.mp4; sourceTree = "<group>"; };
+		079F9235215A1C0D00FAEE72 /* welcome_skip_normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "welcome_skip_normal@2x.png"; sourceTree = "<group>"; };
+		079F9236215A1C0D00FAEE72 /* welcome_skip_highlight@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "welcome_skip_highlight@2x.png"; sourceTree = "<group>"; };
 		261E048F6AC1AB6381F1B285 /* Pods-JXWelcomeViewUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JXWelcomeViewUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JXWelcomeViewUITests/Pods-JXWelcomeViewUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		3CDAD59597879CC93B046568 /* libPods-JXWelcomeView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JXWelcomeView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D60282E5E0D70C2FC4C18D3 /* libPods-JXWelcomeViewTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JXWelcomeViewTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -120,6 +132,10 @@
 		0756B373215349B700B99C98 /* JXWelcomeView */ = {
 			isa = PBXGroup;
 			children = (
+				079F9236215A1C0D00FAEE72 /* welcome_skip_highlight@2x.png */,
+				079F9235215A1C0D00FAEE72 /* welcome_skip_normal@2x.png */,
+				079F9233215A184800FAEE72 /* demo.mp4 */,
+				079F9228215A045100FAEE72 /* JXTool */,
 				0756B3AC215382C900B99C98 /* JXWelcomeView */,
 				0756B3B02153832300B99C98 /* Example */,
 				0756B374215349B700B99C98 /* AppDelegate.h */,
@@ -175,6 +191,17 @@
 				0756B3B22153834700B99C98 /* WelcomeVC.m */,
 			);
 			path = Example;
+			sourceTree = "<group>";
+		};
+		079F9228215A045100FAEE72 /* JXTool */ = {
+			isa = PBXGroup;
+			children = (
+				079F922B215A045100FAEE72 /* UIColor+JXExtend.h */,
+				079F9229215A045100FAEE72 /* UIColor+JXExtend.m */,
+				079F922C215A045100FAEE72 /* JXUtilities.h */,
+				079F922A215A045100FAEE72 /* JXUtilities.m */,
+			);
+			path = JXTool;
 			sourceTree = "<group>";
 		};
 		281F8F3D191F00496E1BE4A5 /* Pods */ = {
@@ -306,7 +333,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				079F9234215A184800FAEE72 /* demo.mp4 in Resources */,
+				079F9237215A1C0D00FAEE72 /* welcome_skip_normal@2x.png in Resources */,
 				0756B37E215349B800B99C98 /* Assets.xcassets in Resources */,
+				079F9238215A1C0D00FAEE72 /* welcome_skip_highlight@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -389,7 +419,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				0756B384215349B800B99C98 /* main.m in Sources */,
+				079F922D215A045100FAEE72 /* UIColor+JXExtend.m in Sources */,
 				0756B376215349B700B99C98 /* AppDelegate.m in Sources */,
+				079F922E215A045100FAEE72 /* JXUtilities.m in Sources */,
 				0756B3AF2153831200B99C98 /* JXWelcomeModel.m in Sources */,
 				0756B3AB2153828A00B99C98 /* JXWelcomeVideoView.m in Sources */,
 				0756B3B32153834700B99C98 /* WelcomeVC.m in Sources */,
