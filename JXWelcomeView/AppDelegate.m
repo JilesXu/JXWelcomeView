@@ -27,8 +27,8 @@
     self.window.rootViewController = rootVC;
     [self.window makeKeyAndVisible];
     
-    JXWelcomeVideoView *welcomeView = [[JXWelcomeVideoView alloc] initWithFrame:[UIScreen mainScreen].bounds andUrl:[[NSBundle mainBundle] pathForResource:@"demo" ofType:@"mp4"]];
-    [self.window addSubview:welcomeView];
+//    JXWelcomeVideoView *welcomeView = [[JXWelcomeVideoView alloc] initWithFrame:[UIScreen mainScreen].bounds andUrl:[[NSBundle mainBundle] pathForResource:@"demo" ofType:@"mp4"]];
+//    [self.window addSubview:welcomeView];
     
     return YES;
 }

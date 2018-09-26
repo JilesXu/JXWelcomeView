@@ -6,6 +6,7 @@ target 'JXWelcomeView' do
   # use_frameworks!
 
   pod "Masonry"
+  pod "AFNetworking"
 
   # Pods for JXWelcomeView
 

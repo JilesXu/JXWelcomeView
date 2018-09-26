@@ -20,6 +20,7 @@
 		079F9234215A184800FAEE72 /* demo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 079F9233215A184800FAEE72 /* demo.mp4 */; };
 		079F9237215A1C0D00FAEE72 /* welcome_skip_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 079F9235215A1C0D00FAEE72 /* welcome_skip_normal@2x.png */; };
 		079F9238215A1C0D00FAEE72 /* welcome_skip_highlight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 079F9236215A1C0D00FAEE72 /* welcome_skip_highlight@2x.png */; };
+		07B1778A215B660F0014EC88 /* JXNetworkingModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 07B17789215B660F0014EC88 /* JXNetworkingModel.m */; };
 		167B4257417B3E0272007762 /* libPods-JXWelcomeViewTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D60282E5E0D70C2FC4C18D3 /* libPods-JXWelcomeViewTests.a */; };
 		E110ACB1A06137754181640A /* libPods-JXWelcomeView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CDAD59597879CC93B046568 /* libPods-JXWelcomeView.a */; };
 		FE3E8F9F3F8BD12C1CECB5DA /* libPods-JXWelcomeViewUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CB1D7008F70A16874A306A5B /* libPods-JXWelcomeViewUITests.a */; };
@@ -69,6 +70,8 @@
 		079F9233215A184800FAEE72 /* demo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = demo.mp4; sourceTree = "<group>"; };
 		079F9235215A1C0D00FAEE72 /* welcome_skip_normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "welcome_skip_normal@2x.png"; sourceTree = "<group>"; };
 		079F9236215A1C0D00FAEE72 /* welcome_skip_highlight@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "welcome_skip_highlight@2x.png"; sourceTree = "<group>"; };
+		07B17788215B660F0014EC88 /* JXNetworkingModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JXNetworkingModel.h; sourceTree = "<group>"; };
+		07B17789215B660F0014EC88 /* JXNetworkingModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JXNetworkingModel.m; sourceTree = "<group>"; };
 		261E048F6AC1AB6381F1B285 /* Pods-JXWelcomeViewUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JXWelcomeViewUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JXWelcomeViewUITests/Pods-JXWelcomeViewUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		3CDAD59597879CC93B046568 /* libPods-JXWelcomeView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JXWelcomeView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D60282E5E0D70C2FC4C18D3 /* libPods-JXWelcomeViewTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JXWelcomeViewTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -135,6 +138,7 @@
 				079F9236215A1C0D00FAEE72 /* welcome_skip_highlight@2x.png */,
 				079F9235215A1C0D00FAEE72 /* welcome_skip_normal@2x.png */,
 				079F9233215A184800FAEE72 /* demo.mp4 */,
+				07B17787215B65E90014EC88 /* JXAFNetworking */,
 				079F9228215A045100FAEE72 /* JXTool */,
 				0756B3AC215382C900B99C98 /* JXWelcomeView */,
 				0756B3B02153832300B99C98 /* Example */,
@@ -202,6 +206,15 @@
 				079F922A215A045100FAEE72 /* JXUtilities.m */,
 			);
 			path = JXTool;
+			sourceTree = "<group>";
+		};
+		07B17787215B65E90014EC88 /* JXAFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				07B17788215B660F0014EC88 /* JXNetworkingModel.h */,
+				07B17789215B660F0014EC88 /* JXNetworkingModel.m */,
+			);
+			path = JXAFNetworking;
 			sourceTree = "<group>";
 		};
 		281F8F3D191F00496E1BE4A5 /* Pods */ = {
@@ -422,6 +435,7 @@
 				079F922D215A045100FAEE72 /* UIColor+JXExtend.m in Sources */,
 				0756B376215349B700B99C98 /* AppDelegate.m in Sources */,
 				079F922E215A045100FAEE72 /* JXUtilities.m in Sources */,
+				07B1778A215B660F0014EC88 /* JXNetworkingModel.m in Sources */,
 				0756B3AF2153831200B99C98 /* JXWelcomeModel.m in Sources */,
 				0756B3AB2153828A00B99C98 /* JXWelcomeVideoView.m in Sources */,
 				0756B3B32153834700B99C98 /* WelcomeVC.m in Sources */,
